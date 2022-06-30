@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public LayerMask collisionMask;
 
     public Transform bullet;
-    private float speed = 15;
+    private float speed = 100;
 
     // Update is called once per frame
     void Update()

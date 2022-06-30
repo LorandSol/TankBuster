@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour
     private Vector3 movement;
     private Vector3 velocity;
     public float moveSpeed = 10f;
-    public GameObject bullet;
 
     // Start is called before the first frame update
     void Start()
