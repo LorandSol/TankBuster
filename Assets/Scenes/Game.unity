@@ -963,4 +963,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5602005537266344343, guid: 75b0c3b583918ef4cbb6b0d33d451f2e, type: 3}
+  shootPoint: {fileID: 2064999178}
   speed: 100
