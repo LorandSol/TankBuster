@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98187072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.6, y: 2.13, z: -15.79}
+  m_LocalPosition: {x: -43.69, y: 2.13, z: -8.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 125224971}
   - component: {fileID: 125224972}
   - component: {fileID: 125224973}
+  - component: {fileID: 125224974}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -413,6 +414,21 @@ MonoBehaviour:
   play2bullet: {fileID: 664200947}
   shootPoint: {fileID: 825652755}
   speed: 100
+--- !u!114 &125224974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125224965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556758509976bee49a8d5f9649264c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2Points: 0
+  respawnPoint: {fileID: 98187072}
+  player: {fileID: 125224965}
 --- !u!1 &244907166
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943888643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.76, y: 2.13, z: -15.79}
+  m_LocalPosition: {x: 48.16, y: 2.13, z: -15.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -931,6 +947,7 @@ GameObject:
   - component: {fileID: 1080172401}
   - component: {fileID: 1080172400}
   - component: {fileID: 1080172402}
+  - component: {fileID: 1080172403}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -1060,6 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1363404844}
   speed: 6
+  turnSmoothTime: 0.1
 --- !u!114 &1080172402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,6 +1094,21 @@ MonoBehaviour:
   play2bullet: {fileID: 6419130784108349313, guid: c5bcd9942fbb382438f64e6744c6fec7, type: 3}
   shootPoint: {fileID: 104469631}
   speed: 100
+--- !u!114 &1080172403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080172394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d46c7ce79a2a243ad25462a98590bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Points: 0
+  respawnPoint: {fileID: 943888643}
+  player: {fileID: 1080172394}
 --- !u!1 &1363404842
 GameObject:
   m_ObjectHideFlags: 0

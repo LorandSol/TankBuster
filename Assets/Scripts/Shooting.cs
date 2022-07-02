@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             GameObject instBullet = Instantiate(play1bullet, shootPoint.position, shootPoint.rotation) as GameObject;
             Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();
@@ -21,7 +21,7 @@ public class Shooting : MonoBehaviour
             Destroy(instBullet, 3f);
         }
 
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject instBullet = Instantiate(play2bullet, shootPoint.position, shootPoint.rotation) as GameObject;
             Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();

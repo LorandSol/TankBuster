@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5246692101040252379}
   m_Layer: 0
   m_Name: bulletPlay2
-  m_TagString: Untagged
+  m_TagString: Player2Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
