@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Player2Respawn : MonoBehaviour
 {
-    public GameObject respawnPoint2;
     public GameObject player2;
+    public GameObject respawnPoint2;
     public Gamemanager gameScript;
 
     private void OnCollisionEnter(Collision collision)
