@@ -25,5 +25,4 @@ public class Bullet : MonoBehaviour
             transform.eulerAngles = new Vector3(0, rot, 0);
         }
     }
-
 }
