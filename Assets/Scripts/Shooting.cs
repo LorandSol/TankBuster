@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public GameObject bullet;
+    public GameObject play1bullet;
+    public GameObject play2bullet;
+
     public Transform shootPoint;
     public float speed = 100f;
 
@@ -13,7 +15,15 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject instBullet = Instantiate(bullet, shootPoint.position, shootPoint.rotation) as GameObject;
+            GameObject instBullet = Instantiate(play1bullet, shootPoint.position, shootPoint.rotation) as GameObject;
+            Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();
+            instBulletRigidbody.AddForce(shootPoint.transform.forward * speed);
+            Destroy(instBullet, 3f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            GameObject instBullet = Instantiate(play2bullet, shootPoint.position, shootPoint.rotation) as GameObject;
             Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();
             instBulletRigidbody.AddForce(shootPoint.transform.forward * speed);
             Destroy(instBullet, 3f);

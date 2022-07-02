@@ -28,7 +28,7 @@ public class InputManagerPlay1 : MonoBehaviour
 
     void Update()
     {
-        movement.ReceiveInput(horizontalInputPlayer1); 
+        movement.ReceiveInput(horizontalInputPlayer1);
     }
 
     void OnEnable()
