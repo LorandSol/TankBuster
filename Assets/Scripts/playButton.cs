@@ -18,7 +18,6 @@ public class playButton : MonoBehaviour
     private void Update()
     {
         Time.timeScale = 0f; 
-        
     }
 
     public void Play()
