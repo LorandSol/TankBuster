@@ -15,7 +15,6 @@ public class DamagingWalls : MonoBehaviour
         {
             boxHealth--;
             GetComponent<Renderer>().material = damangedMaterial; // change material
-            box.transform.SetParent(damangedBoxes); 
             if(boxHealth == 0)
             {
                 Destroy(box); 

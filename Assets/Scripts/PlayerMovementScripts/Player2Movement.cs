@@ -28,7 +28,7 @@ public class Player2Movement : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-        controller.Move(horizontalVelocity * Time.deltaTime);
+        controller.Move(horizontalVelocity * Time.deltaTime );
 
     }
 
