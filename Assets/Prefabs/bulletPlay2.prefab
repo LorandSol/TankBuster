@@ -113,7 +113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
   - serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 64
+  - serializedVersion: 2
+    m_Bits: 256
   bullet: {fileID: 6007502905961998166}
 --- !u!54 &-5246692101040252379
 Rigidbody:
