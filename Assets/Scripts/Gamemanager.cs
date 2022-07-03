@@ -16,7 +16,7 @@ public class Gamemanager : MonoBehaviour
     public TextMeshProUGUI player2Win;
     public TextMeshProUGUI tieText;
 
-    private float timer = 10.0f;
+    private float timer = 60.0f;
     private bool gameOver = false;
 
     private void Start()
@@ -60,16 +60,19 @@ public class Gamemanager : MonoBehaviour
             if (playerScore1 > playerScore2)
             {
                 player1Win.gameObject.SetActive(true);
+                timerText.gameObject.SetActive(false);
                 Debug.Log("Player 1 wins!");
             }
             else if (playerScore2 > playerScore1)
             {
                 player2Win.gameObject.SetActive(true);
+                timerText.gameObject.SetActive(false);
                 Debug.Log("Player 2 wins!");
             }
             else if (playerScore1 == playerScore2)
             {
                 tieText.gameObject.SetActive(true);
+                timerText.gameObject.SetActive(false);
                 Debug.Log("It's a tie!");
             }
         }
