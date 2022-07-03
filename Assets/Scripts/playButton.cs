@@ -17,12 +17,15 @@ public class playButton : MonoBehaviour
 
     private void Update()
     {
-        Time.timeScale = 0f; 
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
     }
 
     public void Play()
     {
         Time.timeScale = 1f;
-        startPanel.gameObject.SetActive(false); 
+        startPanel.gameObject.SetActive(false);
+        AudioListener.pause = false;
+
     }
 }
