@@ -14,6 +14,7 @@ public class Player2Respawn : MonoBehaviour
         {
             player2.transform.position = respawnPoint2.transform.position;
             gameScript.playerScore1++;
+            gameScript.playerScoreText1.text = "Player 1: " + gameScript.playerScore1.ToString();
         }
     }
 }
