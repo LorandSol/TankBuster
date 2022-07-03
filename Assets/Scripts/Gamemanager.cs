@@ -16,7 +16,7 @@ public class Gamemanager : MonoBehaviour
     public TextMeshProUGUI player2Win;
     public TextMeshProUGUI tieText;
 
-    private float timer = 60.0f;
+    private float timer = 61.0f;
     private bool gameOver = false;
 
     private void Start()
