@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Player1Bullet
   - Player2Bullet
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
