@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour
             GameObject instBullet = Instantiate(play1bullet, shootPoint.position, shootPoint.rotation) as GameObject;
             Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();
             instBulletRigidbody.AddForce(shootPoint.transform.forward * speed);
-            Destroy(instBullet, 3f);
+            Destroy(instBullet, 1f);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -26,7 +26,7 @@ public class Shooting : MonoBehaviour
             GameObject instBullet = Instantiate(play2bullet, shootPoint.position, shootPoint.rotation) as GameObject;
             Rigidbody instBulletRigidbody = instBullet.GetComponent<Rigidbody>();
             instBulletRigidbody.AddForce(shootPoint.transform.forward * speed);
-            Destroy(instBullet, 3f);
+            Destroy(instBullet, 1f);
         }
     }
 }
